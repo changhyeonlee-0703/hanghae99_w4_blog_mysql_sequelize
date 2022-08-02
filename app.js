@@ -5,9 +5,6 @@ const router = express.Router();
 require("dotenv").config(); // npm i dotenv
 const port = process.env.PORT; //process.env는 내장 함수로 .env파일의 PORT란 변수를 불러와줌.
 
-//mongoDB 연결
-const connect = require("./schemas");
-connect();
 
 // routes 폴더 js 파일 연결
 const indexRouter = require("./routes/index");
